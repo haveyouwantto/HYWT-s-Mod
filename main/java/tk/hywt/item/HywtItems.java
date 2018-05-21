@@ -23,7 +23,7 @@ public class HywtItems {
    public static ToolMaterial op = EnumHelper.addToolMaterial("op", 5, 2147483647, 64f, 1E16f, 251);
    public static Item TestIt;
    public static Item Qiu;
-   public static Item QiuSpawner;
+   public static Item QiuMonster;
    public static Item QiuFood;
    public static Item QiuSword;
    public static Item QiuPickaxe;
@@ -39,7 +39,7 @@ public class HywtItems {
        QiuPickaxe= new QiuPickaxe(qiupick).setUnlocalizedName("qiuPickaxe").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu_pickaxe");
        QiuAxe= new QiuAxe(qiuaxe).setUnlocalizedName("qiuAxe").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu_axe");
        QiuShovel=new QiuShovel(qiu).setUnlocalizedName("qiuShovel").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu_shovel");
-       QiuSpawner=new Item().setUnlocalizedName("qiuSpawner").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu_spawner");
+       QiuMonster=new Item().setUnlocalizedName("qiuMonster").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu_monster");
        QiuHoe=new QiuHoe(qiu).setUnlocalizedName("qiuHoe").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu_hoe");
        OPSword=new OPSword(op).setUnlocalizedName("opSword").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":op_sword");
    }
@@ -53,6 +53,6 @@ public class HywtItems {
 	   GameRegistry.registerItem(QiuHoe, "qiu_hoe");
 	   GameRegistry.registerItem(QiuShovel, "qiu_shovel");
 	   GameRegistry.registerItem(OPSword,"op_sword");
-	   GameRegistry.registerItem(QiuSpawner, "qiu_spawner");
+	   GameRegistry.registerItem(QiuMonster, "qiu_monster");
    }
 }

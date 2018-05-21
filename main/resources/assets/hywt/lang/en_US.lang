@@ -1,0 +1,14 @@
+item.testItem.name=Item 000
+item.qiu.name=Qiu
+item.qiuPickaxe.name=Qiu Pickaxe
+item.qiuSword.name=Qiu Sword
+item.qiuShovel.name=Qiu Shovel
+item.qiuAxe.name=Qiu Axe
+item.qiuHoe.name=Qiu Hoe
+item.qiuFood.name=Qiu Food
+item.qiuSpawner.name=Qiu Monster Essential
+item.opSword.name=OP Sword
+tile.testBlock.name=Block 000
+tile.qiuBlock.name=Qiu Block
+itemGroup.miscTab=[HYWT] Miscellaneous
+itemGroup.qiuTab=[HYWT] Qiu

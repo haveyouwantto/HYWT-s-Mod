@@ -6,7 +6,9 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import tk.hywt.lib.RefStrings;
+import tk.hywt.oregen.OreGen;
 import tk.hywt.recipes.HywtRecipes;
 import tk.hywt.tab.HywtTabs;
 import tk.hywt.block.TestBlock;
@@ -23,6 +25,7 @@ public class MainRegistry {
 		HywtItems.mainRegistry();
 		HywtBlocks.mainRegistry();
 		HywtRecipes.init();
+		GameRegistry.registerWorldGenerator(new OreGen(),0);
     proxy.registerRenderInfo();
 	}
 	@EventHandler

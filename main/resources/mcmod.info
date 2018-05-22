@@ -2,8 +2,8 @@
 {
   "modid": "hywt",
   "name": "HYWT's Mod",
-  "description": "Don't forget to keep thinking.",
-  "version": "${version}",
+  "description": "Don't forget to keep on thinking.",
+  "version": "Beta",
   "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",

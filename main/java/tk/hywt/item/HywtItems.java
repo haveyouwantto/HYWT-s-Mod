@@ -20,7 +20,7 @@ public class HywtItems {
    public static ToolMaterial qiuaxe = EnumHelper.addToolMaterial("qiuaxe", 2, 121, 3f, 5, 4);
    public static ToolMaterial qiu = EnumHelper.addToolMaterial("qiu", 1, 100, 2.5f, 5, 4);
    public static ToolMaterial qiusword = EnumHelper.addToolMaterial("qiusword", 4, 2916, 16f, 12, 25);
-   public static ToolMaterial op = EnumHelper.addToolMaterial("op", 5, 2147483647, 64f, 1E16f, 251);
+   public static ToolMaterial op = EnumHelper.addToolMaterial("op", 5, 2147483647, 64f, 1E16f, 127);
    public static Item TestIt;
    public static Item Qiu;
    public static Item QiuMonster;

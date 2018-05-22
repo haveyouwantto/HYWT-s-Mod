@@ -35,5 +35,6 @@ public class MainRegistry {
 	@EventHandler
 	public static void PostLoad(FMLPostInitializationEvent PostEvent){
 	HywtBlocks.QiuBlock.setHarvestLevel("pickaxe",2);
+	HywtBlocks.QiuOre.setHarvestLevel("pickaxe",2);
 	}
 }

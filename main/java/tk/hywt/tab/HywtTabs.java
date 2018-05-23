@@ -9,6 +9,6 @@ public class HywtTabs {
   public static void initialiseTabs() {
 	  MiscTab = new MiscTab("miscTab");
 	  qiu = new qiu("qiuTab");
-	  cgItem=new cgItem("cgItem");
+	  cgItem=new cgItemTab("cgItem");
   }
 }

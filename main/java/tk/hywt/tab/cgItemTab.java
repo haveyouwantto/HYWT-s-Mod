@@ -4,9 +4,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import tk.hywt.item.HywtItems;
 
-public class cgItem extends CreativeTabs {
+public class cgItemTab extends CreativeTabs {
 
-	public cgItem(String lable) {
+	public cgItemTab(String lable) {
 		super(lable);
 		// TODO Auto-generated constructor stub
 	}

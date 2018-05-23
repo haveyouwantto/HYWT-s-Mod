@@ -22,12 +22,12 @@ public class MainRegistry {
 	public static ServerProxy proxy;
 	@EventHandler
 	public static void PreLoad(FMLPreInitializationEvent PreEvent){
-		AutoRegisterItem.ag();
 		HywtTabs.initialiseTabs();
 		HywtItems.mainRegistry();
 		HywtBlocks.mainRegistry();
 		HywtRecipes.init();
 		GameRegistry.registerWorldGenerator(new OreGen(),0);
+		AutoRegisterItem.ag();
     proxy.registerRenderInfo();
 	}
 	@EventHandler

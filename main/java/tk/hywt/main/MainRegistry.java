@@ -12,6 +12,7 @@ import tk.hywt.oregen.OreGen;
 import tk.hywt.recipes.HywtRecipes;
 import tk.hywt.tab.HywtTabs;
 import tk.hywt.block.TestBlock;
+import tk.hywt.item.AutoRegisterItem;
 import tk.hywt.item.HywtItems;	
 import tk.hywt.block.HywtBlocks;
 
@@ -21,6 +22,7 @@ public class MainRegistry {
 	public static ServerProxy proxy;
 	@EventHandler
 	public static void PreLoad(FMLPreInitializationEvent PreEvent){
+		AutoRegisterItem.ag();
 		HywtTabs.initialiseTabs();
 		HywtItems.mainRegistry();
 		HywtBlocks.mainRegistry();

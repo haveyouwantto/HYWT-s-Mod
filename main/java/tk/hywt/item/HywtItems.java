@@ -31,6 +31,7 @@ public class HywtItems {
    public static Item QiuShovel;
    public static Item QiuHoe;
    public static Item OPSword;
+   public static Item Cg;
    public static void initializeItem() {
 	   TestIt=new Item().setUnlocalizedName("testItem").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":test_item");
        Qiu= new Item().setUnlocalizedName("qiu").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu");
@@ -42,6 +43,7 @@ public class HywtItems {
        QiuMonster=new Item().setUnlocalizedName("qiuMonster").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu_monster");
        QiuHoe=new QiuHoe(qiu).setUnlocalizedName("qiuHoe").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu_hoe");
        OPSword=new OPSword(op).setUnlocalizedName("opSword").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":op_sword");
+       Cg=new Item().setTextureName(RefStrings.modid+":cg");
    }
    public static void registerItem() {
 	   GameRegistry.registerItem(TestIt, "test_item");
@@ -54,5 +56,6 @@ public class HywtItems {
 	   GameRegistry.registerItem(QiuShovel, "qiu_shovel");
 	   GameRegistry.registerItem(OPSword,"op_sword");
 	   GameRegistry.registerItem(QiuMonster, "qiu_monster");
+	   GameRegistry.registerItem(Cg, "cg");
    }
 }

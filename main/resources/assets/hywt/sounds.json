@@ -1,8 +1,27 @@
 {
-  "gun_shot": {
-    "category": "player",
-    "sounds": [{
-      "name": "hywt:gun_shot"
-    }]
-  }
-  }
+   "gun_shot": {
+      "category": "player",
+      "sounds": [
+         {
+            "name": "hywt:gun_shot"
+         }
+      ]
+   },
+   "cannon_fire": {
+      "category": "player",
+      "sounds": [
+         {
+            "name": "hywt:cannon_fire_1"
+         },
+         {
+            "name": "hywt:cannon_fire_2"
+         },
+         {
+            "name": "hywt:cannon_fire_3"
+         },
+         {
+            "name": "hywt:cannon_fire_4"
+         }
+      ]
+   }
+}

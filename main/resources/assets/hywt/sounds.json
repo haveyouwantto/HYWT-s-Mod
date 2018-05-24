@@ -1,0 +1,8 @@
+{
+  "gun_shot": {
+    "category": "player",
+    "sounds": [{
+      "name": "hywt:gun_shot"
+    }]
+  }
+  }

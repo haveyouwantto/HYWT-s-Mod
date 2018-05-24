@@ -7,6 +7,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.common.MinecraftForge;
 import tk.hywt.lib.RefStrings;
 import tk.hywt.oregen.OreGen;
 import tk.hywt.recipes.HywtRecipes;
@@ -14,7 +15,9 @@ import tk.hywt.tab.HywtTabs;
 import tk.hywt.block.TestBlock;
 import tk.hywt.entity.HywtEntities;
 import tk.hywt.item.AutoRegisterItem;
-import tk.hywt.item.HywtItems;	
+import tk.hywt.item.HywtItems;
+import tk.hywt.keybinds.HywtKeybinds;
+import tk.hywt.keybinds.KeyInputHandler;
 import tk.hywt.block.HywtBlocks;
 
 @Mod(modid = RefStrings.modid, name =RefStrings.name , version =RefStrings.version )
@@ -30,6 +33,8 @@ public class MainRegistry {
 		HywtEntities.init();
 		GameRegistry.registerWorldGenerator(new OreGen(),0);
 		AutoRegisterItem.ag();
+		HywtKeybinds.register();
+		MinecraftForge.EVENT_BUS.register(new KeyInputHandler());
     proxy.registerRenderInfo();
 	}
 	@EventHandler

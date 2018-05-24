@@ -33,9 +33,9 @@ public class HywtItems {
    public static Item OPSword;
    public static Item Cg;
    public static Item Rocket;
-   public static Item Torch;
+   public static Item AK47;
    public static void initializeItem() {
-	   TestIt=new TestIt().setUnlocalizedName("testItem").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":test_item").setMaxStackSize(1).setMaxDamage(0).setFull3D();
+	   TestIt=new Item().setUnlocalizedName("testItem").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":test_item").setMaxStackSize(1).setMaxDamage(0).setFull3D();
        Qiu= new Item().setUnlocalizedName("qiu").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu");
        QiuFood=new ItemFood(4,false).setUnlocalizedName("qiuFood").setTextureName(RefStrings.modid+":qiu_food").setCreativeTab(HywtTabs.qiu);
        QiuSword= new QiuSword(qiusword).setUnlocalizedName("qiuSword").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu_sword");
@@ -47,7 +47,7 @@ public class HywtItems {
        OPSword=new OPSword(op).setUnlocalizedName("opSword").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":op_sword");
        Cg=new Item().setTextureName(RefStrings.modid+":cg");
        Rocket=new RocketLauncher().setUnlocalizedName("rocket").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":rocket").setMaxStackSize(1).setMaxDamage(0).setFull3D();
-       Torch=new TorchGun().setUnlocalizedName("torchGun").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":torch").setMaxStackSize(1).setMaxDamage(0).setFull3D();
+       AK47=new AK47().setUnlocalizedName("ak47").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":ak47").setMaxStackSize(1).setMaxDamage(0).setFull3D();
    }
    public static void registerItem() {
 	   GameRegistry.registerItem(TestIt, "test_item");
@@ -62,6 +62,6 @@ public class HywtItems {
 	   GameRegistry.registerItem(QiuMonster, "qiu_monster");
 	   GameRegistry.registerItem(Cg, "cg");
 	   GameRegistry.registerItem(Rocket, "rocket");
-	   GameRegistry.registerItem(Torch, "torch_gun");
+	   GameRegistry.registerItem(AK47, "ak47");
    }
 }

@@ -12,6 +12,7 @@ import tk.hywt.oregen.OreGen;
 import tk.hywt.recipes.HywtRecipes;
 import tk.hywt.tab.HywtTabs;
 import tk.hywt.block.TestBlock;
+import tk.hywt.entity.HywtEntities;
 import tk.hywt.item.AutoRegisterItem;
 import tk.hywt.item.HywtItems;	
 import tk.hywt.block.HywtBlocks;
@@ -26,6 +27,7 @@ public class MainRegistry {
 		HywtItems.mainRegistry();
 		HywtBlocks.mainRegistry();
 		HywtRecipes.init();
+		HywtEntities.init();
 		GameRegistry.registerWorldGenerator(new OreGen(),0);
 		AutoRegisterItem.ag();
     proxy.registerRenderInfo();

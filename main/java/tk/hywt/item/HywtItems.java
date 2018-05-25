@@ -34,6 +34,8 @@ public class HywtItems {
    public static Item Cg;
    public static Item Rocket;
    public static Item AK47;
+   public static Item TripleRocket;
+   public static Item DoomsdayRocket;
    public static void initializeItem() {
 	   TestIt=new Item().setUnlocalizedName("testItem").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":test_item").setMaxStackSize(1).setMaxDamage(0).setFull3D();
        Qiu= new Item().setUnlocalizedName("qiu").setCreativeTab(HywtTabs.qiu).setTextureName(RefStrings.modid+":qiu");
@@ -48,6 +50,8 @@ public class HywtItems {
        Cg=new Item().setTextureName(RefStrings.modid+":cg");
        Rocket=new RocketLauncher().setUnlocalizedName("rocket").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":rocket").setMaxStackSize(1).setMaxDamage(0).setFull3D();
        AK47=new AK47().setUnlocalizedName("ak47").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":ak47").setMaxStackSize(1).setMaxDamage(0).setFull3D();
+       TripleRocket=new TripleRocket().setUnlocalizedName("tripleRocket").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":triple_rocket").setMaxStackSize(1).setMaxDamage(0).setFull3D();
+       DoomsdayRocket=new DoomsdayRocket().setUnlocalizedName("doomsdayRocket").setCreativeTab(HywtTabs.MiscTab).setTextureName(RefStrings.modid+":doomsday_rocket").setMaxStackSize(1).setMaxDamage(0).setFull3D();
    }
    public static void registerItem() {
 	   GameRegistry.registerItem(TestIt, "test_item");
@@ -63,5 +67,7 @@ public class HywtItems {
 	   GameRegistry.registerItem(Cg, "cg");
 	   GameRegistry.registerItem(Rocket, "rocket");
 	   GameRegistry.registerItem(AK47, "ak47");
+	   GameRegistry.registerItem(TripleRocket, "triple_rocket");
+	   GameRegistry.registerItem(DoomsdayRocket, "doomsday_rocket");
    }
 }

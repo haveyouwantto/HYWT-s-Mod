@@ -4,20 +4,23 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockRedstoneDiode;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.init.Blocks;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
+import tk.hywt.lib.hMath;
 
-public class EntityRocket extends EntityThrowable
+public class EntityDoomsdayRocket extends EntityThrowable
 {
-    public EntityRocket(World world)
+    public EntityDoomsdayRocket(World world)
     {
         super(world);
     }
  
-    public EntityRocket(World world, EntityLivingBase entity)
+    public EntityDoomsdayRocket(World world, EntityLivingBase entity)
     {
         super(world, entity);
     }
@@ -27,7 +30,10 @@ public class EntityRocket extends EntityThrowable
         int bx = (int)posX;
         int by = (int)posY;
         int bz = (int)posZ;
-        worldObj.createExplosion(this, posX, posY, posZ, 4F, true);
+        worldObj.createExplosion(this, posX, posY, posZ, 15F, true);
+        for (int i = 0; i < 5; i++) {
+        worldObj.newExplosion(this, posX+hMath.GetRandomNumber(40)-20, posY, posZ+hMath.GetRandomNumber(40)-20, 4, true,true);
+        }
         setDead();
     }
     @Override
@@ -55,5 +61,8 @@ public class EntityRocket extends EntityThrowable
     {
         explode();
     }
-    
+    protected float func_70182_d()
+    {
+    return 2F; // set to speed you want
+    }
 }

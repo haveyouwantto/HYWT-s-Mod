@@ -33,8 +33,13 @@ public class EntityBullet extends EntityThrowable
     public void onImpact(MovingObjectPosition movingObjectPosition)
     {
     	 if (movingObjectPosition.entityHit != null) {
-        movingObjectPosition.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getThrower()), (float)4);
+        movingObjectPosition.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getThrower()), (float)8);
     	 }
         setDead();
+    }
+    @Override
+    protected float func_70182_d()
+    {
+    return 5F; // set to speed you want
     }
 }

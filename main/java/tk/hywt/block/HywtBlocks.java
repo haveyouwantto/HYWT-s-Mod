@@ -30,6 +30,7 @@ public class HywtBlocks {
 			  GameRegistry.registerBlock(test_block,"test_block");
 			  GameRegistry.registerBlock(QiuBlock,"qiu_block");
 			  GameRegistry.registerBlock(QiuOre,"qiu_ore");
+			  GameRegistry.registerBlock(CSTTNT.block, "CTSTNT");
 	   }
 	}
 

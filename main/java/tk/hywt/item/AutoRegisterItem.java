@@ -15,7 +15,7 @@ public class AutoRegisterItem {
 	public static void ag(){
 	for (int j = 1; j<10; j++){
 		ToolMaterial cgm = EnumHelper.addToolMaterial(String.valueOf(j), 4, j*32, 2f, j-2, 10);
-		Item newI=CGSword.get(j,String.valueOf(j),cgm);
+		Item newI=CGSword.cg(j,String.valueOf(j),cgm);
 		GameRegistry.registerItem(newI, "cg_sword_"+j);
 	}
 }}

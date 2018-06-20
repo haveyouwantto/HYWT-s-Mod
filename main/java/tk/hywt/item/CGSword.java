@@ -7,7 +7,7 @@ import tk.hywt.lib.RefStrings;
 import tk.hywt.tab.HywtTabs;
 
 public class CGSword extends Item {
-	public static Item get(int j, String i ,ToolMaterial cgm) 
+	public static Item cg(int j, String i ,ToolMaterial cgm) 
 	{
 		class is extends ItemSword{
 
